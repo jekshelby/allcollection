@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #9fb9dd;
+  --secondary-color: #9b9d9e9b;
+  --accent-color-1: #6c7b95;
+  --accent-color-2: #000000;
+}
+
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  background-color: var(--secondary-color);
+  justify-items: center;
+}
+
+.el {
+  background-color: var(--primary-color);
+  width: 200px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 5px;
+  border: var(--primary-color) solid 5px;
+}
+
+.el:hover {
+  transition: 0.5s;
+  box-shadow: 0 12px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.describe {
+  margin: 5px;
+}
+
+.discount {
+  font-size: 10px;
+  margin: 5px;
+}
+
+.price {
+  margin: 5px;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating p {
+  margin-left: 5px;
+}
+
+.fa-star {
+  color: var(--accent-color-2);
+}
+
+.el::after {
+  content: "KUNJUNGI";
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+  height: 25px;
+  background-color: var(--accent-color-1);
+  cursor: pointer;
+  padding-top: 10px;
+}
