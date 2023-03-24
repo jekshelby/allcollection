@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #9fb9dd;
+    --secondary-color: #9b9d9e9b;
+    --accent-color-1: #6c7b95;
+    --accent-color-2: #000000;
+  }  
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background-color: #9DC08B;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: #354232;
+}
+.header2 {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    background-color: #354232;
+    flex-direction: column;
+}
+
+.container{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+form input {
+    padding: 0.6rem;
+    border-radius: 5px 0px 0px 5px;
+}
+form button {
+    padding: 0.6rem;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.menu {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.menu a {
+    margin: 0 0.5rem;
+}
+
+/*  */
+.body {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.bill-image {
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    height: 20rem;
+}
+
+.bill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.kategori {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.kategori a {
+    color: white;
+}
+
+.jenis {
+    /* border: solid; */
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 7rem;
+    height: 3rem;
+    padding: 5px 5px;
+    background-color: #354232;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.container-box a {
+
+    color: white;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.image-grid {
+    position: relative;
+    height: 13rem;;
+}
+
+.image-grid img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.grid {
+    border-radius: 5px;
+    width: 25vh;
+    height: 20rem;
+    margin: 10px;
+    background-color: #609966;
+}
+
+.nama {
+    height: 3.2rem;
+    padding: 5px;
+}
+
+.komentar {
+    padding: 5px;
+    color: rgb(193, 193, 193);
+}
+
+.harga {
+    padding: 5px;
+}
+
+
+/*  */
+@media (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .header2 {
+        display: flex;
+    }
+    .container{
+        font-size: 1.5rem;
+    }
+    .image-grid {
+        height: 11rem;
+    }
+    .grid {
+        height: 18rem;
+        width: 10rem;
+    }
+    .bill-image {
+        width: 100%;
+        height: 7rem;
+    }
+}
+
