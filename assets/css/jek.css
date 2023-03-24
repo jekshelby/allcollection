@@ -1,9 +1,4 @@
-:root {
-    --primary-color: #9fb9dd;
-    --secondary-color: #9b9d9e9b;
-    --accent-color-1: #6c7b95;
-    --accent-color-2: #000000;
-  }  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -43,9 +38,12 @@ body {
 
 form input {
     padding: 0.6rem;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+    width: 15rem;
+
 }
 form button {
+    display: none;
     padding: 0.6rem;
     border-radius: 0px 5px 5px 0px;
 }
@@ -56,8 +54,18 @@ form button {
     margin: 1rem 0;
 }
 
+.menu a i {
+    font-size: large;
+    color: white;
+}
+
+.menu a i:hover {
+    color: black;
+}
+
 .menu a {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
 }
 
 /*  */
@@ -103,6 +111,15 @@ form button {
     background-color: #354232;
 }
 
+.jenis p {
+    font-size: small;
+    font-weight: 900;
+}
+
+.jenis:hover {
+    box-shadow: 2px 2px 4px gray;
+}
+
 .box {
     margin-top: 20px;
 }
@@ -138,6 +155,10 @@ form button {
     height: 20rem;
     margin: 10px;
     background-color: #609966;
+}
+
+.grid:hover {
+    box-shadow: 2px 2px 4px gray;
 }
 
 .nama {
@@ -176,6 +197,12 @@ form button {
     .bill-image {
         width: 100%;
         height: 7rem;
+    }
+    form input {
+        border-radius: 5px 0px 0px 5px;
+    }
+    form button {
+        display:inline-block;
     }
 }
 
