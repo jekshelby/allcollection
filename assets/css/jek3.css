@@ -63,88 +63,102 @@ body {
     margin: 0 1rem;
 }
 
-.cart {
+.akun {
     cursor: pointer;
     color: white;
 }
 
-.cart:hover {
+.akun:hover {
     color: var(--elegantbiru);
 }
 
-.body {
+/*  */
+.cover {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    flex-direction: column;
     align-items: center;
-}
-
-.logo {
-    position: relative;
-    border: solid;
-    width: 13vh;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    border: solid var(--elegantbiru);
-}
-
-.logo img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.kotak p {
-    margin-left: 20px;
-    color: black;
+    flex-direction: column;
+    height: 15vh;
+    margin: 10px;
 }
 
 .kotak {
-    border-radius: 5px;
-    padding: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 50%;
-    background-color: var(--elegantbase);
-    box-shadow: 2px 2px 4px black;
-    margin: 5px;
-}
-
-.button a {
-    background-color: var(--elegantbiru);
-    padding: 10px;
     border-radius: 10px;
-    color: white;
-}
-
-.button a:hover {
-    box-shadow: 2px 2px 4px black;
-}
-
-.p {
-    border-radius: 5px;
-    padding: 10px;
-    align-items: center;
-    text-align: center;
-    width: 50%;
+    width: 33rem;
     background-color: var(--elegantbase);
-    box-shadow: 2px 2px 4px black;
-    margin: 5px;
+    box-shadow: 5px 5px 5px -5px black;
 }
 
-.akun {
+.kanan {
+    margin-top: none;
+    width: 40vh;
+    align-items: center;
+    padding: 5px;
+}
+
+.kanan p {
     color: black;
 }
 
+.kiri {
+    width: 15vh;
+    padding: 10px;
+}
+
+.kiri .gambar {
+    position: relative;
+    width: 12vh;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    border: solid var(--elegantbiru);
+}
+
+.kiri .gambar img {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hapus {
+    padding: 20px;
+}
+
+.hapus a {
+    color: var(--elegantbiru);
+}
+
+.hapus a i {
+    font-size: 20px;
+}
+
+.hapus i {
+    transition: font-size 0.2s;
+}
+
+.hapus i:hover {
+    font-size: 27px;
+}
+
+.fa-trash::before {
+    content: "\f1f8"; /* kode ikon Font Awesome */
+  }
+  
+  .fa-trash:hover::before {
+    content: "\f2ed"; /* kode ikon Font Awesome lainnya */
+  }
+  
+  
+
+/*  */
 @media (max-width: 768px) {
     .container {
         font-size: 1.5rem;
     }
     .kotak {
-        width: 50vh;
+        width: 20rem;
     }
 }

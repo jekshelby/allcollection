@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
+:root {
+    --elegantbg: #393E46;
+    --elegantabu: #222831;
+    --elegantbiru: #00ADB5;
+    --elegantbase: #EEEEEE;
+
+    --ungugelap: #37306B;
+    --ungusedang: #66347F;
+    --ungumuda: #9E4784;
+    --ungucream: #D27685;
+
+    --hijaubg: #EDF1D6;
+    --hijaumuda: #9DC08B;
+    --hijausedang: #609966;
+    --hijaugelap: #40513B;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -12,7 +29,7 @@
 
 body {
     color: white;
-    background-color: #9DC08B;
+    background-color: var(--elegantbg);
 }
 
 .header {
@@ -20,15 +37,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: #354232;
+    background-color: var(--elegantabu);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
+
 .header2 {
     display: none;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem;
-    background-color: #354232;
+    background-color: var(--elegantabu);
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .container{
@@ -40,12 +67,25 @@ form input {
     padding: 0.6rem;
     border-radius: 5px 5px 5px 5px;
     width: 15rem;
-
 }
+
+form input {
+    color: var(--elegantbiru);
+}
+
+form input::placeholder {
+    color: var(--elegantbiru);
+}
+
 form button {
     display: none;
     padding: 0.6rem;
     border-radius: 0px 5px 5px 0px;
+    background-color: white;
+}
+
+form button i {
+    color: var(--elegantbiru);
 }
 
 .menu {
@@ -60,7 +100,7 @@ form button {
 }
 
 .menu a i:hover {
-    color: black;
+    color: var(--elegantbiru);
 }
 
 .menu a {
@@ -70,7 +110,7 @@ form button {
 
 /*  */
 .body {
-    margin-top: 30px;
+    margin-top: 130px;
     display: flex;
     justify-content: center;
 }
@@ -101,14 +141,13 @@ form button {
 }
 
 .jenis {
-    /* border: solid; */
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 5px;
     width: 7rem;
     height: 3rem;
     padding: 5px 5px;
-    background-color: #354232;
+    background-color: var(--elegantbiru);
 }
 
 .jenis p {
@@ -151,10 +190,10 @@ form button {
 
 .grid {
     border-radius: 5px;
-    width: 25vh;
+    width: 13rem;
     height: 20rem;
     margin: 10px;
-    background-color: #609966;
+    background-color: var(--elegantbase);
 }
 
 .grid:hover {
@@ -166,9 +205,12 @@ form button {
     padding: 5px;
 }
 
+.nama p, .komentar p, .harga p {
+    color: black;
+}
+
 .komentar {
     padding: 5px;
-    color: rgb(193, 193, 193);
 }
 
 .harga {
@@ -183,6 +225,7 @@ form button {
     }
     .header2 {
         display: flex;
+        padding: 0.4rem 1%;
     }
     .container{
         font-size: 1.5rem;
@@ -203,6 +246,15 @@ form button {
     }
     form button {
         display:inline-block;
+    }
+    .nama {
+        height: 3.8rem;
+    }
+    .komentar {
+        padding: 0 5px;
+    }
+    .harga {
+        padding: 0 5px;
     }
 }
 
